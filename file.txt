@@ -1,0 +1,37 @@
+please remind me to give presentation:
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        book={
+        "psychological warfare":50
+         }
+        speak('which one')
+        book1=takeCommand()
+        path=book1+'.pdf'
+        f=open(path,"r+")
+        with open(path, 'rb') as f:
+            pdf = PdfFileReader(f)
+            info = pdf.getDocumentInfo()
+      
+        speak(info.title)
+        speak('by'+info.author)
+        speak('which bookmark')
+        page = pdf.getPage(book["book1"])
+
+        from pyPDF2 import PdfFileReader
